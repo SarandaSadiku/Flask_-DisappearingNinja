@@ -1,0 +1,13 @@
+*{
+    font-family: cursive;
+}
+h1{
+    color:darkred;
+    text-align: center;
+}
+
+img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+}

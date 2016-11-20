@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href='{{ url_for('static', filename='css/styles.css') }}'>
+        <title>Disappearing Ninjas</title>
+    </head>
+    <body>
+        <h1> Ninja Turtles</h1>
+            {% if ninja == 'all' %}
+                <img src="{{url_for('static', filename='images/donatello.jpg' )}}" alt="donatello" />
+                <img src="{{url_for('static', filename='images/leonardo.jpg' )}}" alt="leonardo" />
+                <img src="{{url_for('static', filename='images/michelangelo.jpg' )}}" alt="michelangelo" />
+                <img src="{{url_for('static', filename='images/raphael.jpg' )}}" alt="raphael" />
+                {% else %}
+                <img src="/static/images/{{ninja}}.jpg" alt="{{ninja}}" />
+            {% endif %}
+    </body>
+</html>
